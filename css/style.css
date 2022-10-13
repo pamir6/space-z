@@ -168,7 +168,7 @@ margin-right: 30px;
     flex-wrap: wrap;
 }
 .left-column, .right-column {
-    max-width: 480px;
+    max-width: 440px;
 }
 .content p {
     margin-top: 25px;
@@ -198,12 +198,9 @@ margin-right: 30px;
     height: 8px;
 
     position: absolute;
-    left: -23px;
+    left: -33px;
     top: 4px;
 }
 .content .wrapper:first-child {
     margin-bottom: 50px;
-}
-.wrapper .column-container {
-    gap: 80px;
 }
