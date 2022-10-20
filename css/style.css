@@ -224,14 +224,20 @@ margin-right: 30px;
     row-gap: 8px;
     /* column-gap: 10px; */
 }
+.vacation-form input[type ="tel"]:hover {
+    border: #FFCB06 solid 2px;
+}
 .vacation-form div {
 width: 100%;
+}
+.vacation-form input[type ="text"]:hover {
+    border: #FFCB06 solid 2px;
 }
 .vacation-form input[type ="tel"], .vacation-form input[type ="text"] {
     box-sizing: border-box;
     width: 100%;
     padding: 17px 20px 17px 23px;
-    border: 0px;
+    /* border: 0px; */
 }
 .vacation-form .half-field {
     width: 49%;
@@ -256,7 +262,10 @@ width: 100%;
 .vacation-form input[type ="checkbox"]:checked ~ label::before {
     color: #000;
 }
-
+/*для чекбокса*/
+.vacation-form [type="checkbox"]:not(:disabled):not(:checked) ~ label:hover::before {
+    border-color: #ffcb06;
+}
 .btn-black {
     color: #FFFFFF;
     background: #222222;
@@ -365,10 +374,32 @@ width: 100%;
 }
 .footer-menu a {
     cursor: pointer
-}
+     }
+     .footer-menu a:hover {
+        color: #FFCB06;
+     }
 .footer-submenu li {
     cursor: pointer
 }
 .footer-submenu {
     margin-right: 25px;
 }
+.footer-submenu li:hover, .site-menu a:hover {
+        color: #FFCB06;
+}
+.btn-yellow:active {
+    box-shadow: inset 4px 4px 2px black;
+}
+.btn-black:active {
+    box-shadow: inset 4px 4px 4px rgb(189, 173, 173);
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+.logo:hover {
+    transform: rotate(405deg);
+    transition: 2s;
+}
+
+/* end footer */
